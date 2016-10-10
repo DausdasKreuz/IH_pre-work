@@ -9,9 +9,7 @@ nav {
 	right: 0;
 	top: 0;
 	padding-right: 30px;
-	/* width: 100%; */
 	position: relative;
-	/* align-items: center; */
 }
 
 .menu {
@@ -20,7 +18,7 @@ nav {
 	position: absolute;
 	right: 0;
 	padding-right: 30px;
-	top: -220px;
+	top: -190px;
 }
 
 .text-menu {
@@ -56,8 +54,7 @@ nav {
     text-decoration: none;
     box-sizing: border-box;
     display: inline-block;
-    /* vertical-align: middle; */
-    /* color: #000; */
+    color: #000;
 }
 
 #google-apps {
@@ -72,18 +69,21 @@ nav {
 	opacity: .85;
 }
 
+#notifications-button {
+	padding-left: 15px;
+}
 #notifications {
 	height: 30px;
 	width: 30px;
-	/* padding-left: 15px; */
 }
+
+#notifications:hover {}
 
 #icon-notifications {
 	background-image: url(https://ssl.gstatic.com/gb/images/i1_1967ca6a.png);
 	background-size: 528px 68px;
-	/* color: #fff; */
 	background-position: -194px -21px;
-	background-color: rgba(0,0,0,.85);
+	background-color: #000;
 	font-size: 12px;
 	font-weight: bold;
 	line-height: 20px;
@@ -101,15 +101,15 @@ nav {
 	background-color: rgba(0,0,0,.85);
 }
 
-#google-id {background-image: url(photo_perfil.jpg);background-size: 100%;height: 30px;width: 30px;}
-
-#google-id:hover {
-	
+#google-id-button {
+	padding-left: 15px;
 }
+
+#google-id {background-image: url(photo_perfil.jpg);background-size: 100%;height: 30px;width: 30px;}
 
 .logo-container {
 	height: 92px;
-	margin-top: 230px;
+	margin-top: 198px;
 }
 
 .logo {
@@ -117,13 +117,22 @@ nav {
 	background-size: 272px 92px;
 	height: 92px;
 	width: 272px;
-	/* padding-top: 109px; */
 	margin-left: auto;
 	margin-right: auto;
 	bottom: 0;
 	position: relative;
 }
 
+.logo-subtext {
+	color: #4285f4;
+	font: 16px/16px roboto-regular, arial, sans-serif;
+	position: relative;
+	left: 215px;
+	top: 76px;
+}
+.search-bar-container {
+	padding-top: 30px;
+}
 .search-bar {
 	text-align: center;
 	height: 36px;
@@ -132,6 +141,7 @@ nav {
 	padding-bottom: 2px;
 	border: 1px solid #d9d9d9;
 	vertical-align: middle;
+	position: relative;
 }
 
 .search-bar:hover {
@@ -140,27 +150,15 @@ nav {
 
 .micro-container {
 	line-height: 38px;
-	/* padding: 0 8px; */
-	/* margin-top: -1px; */
-	/* position: static; */
 	float: right;
-	/* vertical-align: top; */
-	/* height: 38px; */
 	width: 30px;
-	/* margin-top: -1px; */
 	display: inline-block;
-	/* margin-left: auto; */
 	margin-right: 5px;
 }
 
 .micro {
 	cursor: pointer;
-	/* padding: 0 4px; */
-	/* height: 25px; */
-	/* width: 38px; */
 	display: inline-block;
-	/* margin-left: auto; */
-	/* margin-right: auto; */
 }
 
 .micro-icon {
@@ -171,13 +169,11 @@ nav {
 	height: 23px;
 	width: 17px;
 	vertical-align: middle;
-	/* margin-left: auto; */
-	/* margin-right: auto; */
 }
 
 .search-buttons {
 	text-align: center;
-	padding: 1px 6px;
+	padding-top: 21px;
 }
 
 .search-button-item {
@@ -189,7 +185,7 @@ nav {
 	font-size: 13px;
 	font-weight: bold;
 	color: #757575;
-	margin: 11px 4px;
+	margin: 11px 2px;
 	border: 1px solid #f2f2f2;
 	border-radius: 2px;
 	min-width: 54px;
@@ -207,11 +203,12 @@ nav {
 .search-options {
 	text-align: center;
 	font-size: small;
-	line-height: 28px;
-	margin-top: 12px;
-	margin-bottom: 24px;
+	margin-top: 4px;
 }
 
+#search-option-text {
+	padding-right: 0px;
+}
 .search-options-item {
 	display: inline-block;
 	padding: 0 3px;
@@ -237,7 +234,6 @@ footer {
 
 .footer-menu {
     border-top: 1px solid #e4e4e4;
-    /* line-height: 40px; */
     min-width: 980px;
 }
 
