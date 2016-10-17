@@ -1,11 +1,11 @@
 require 'pry'
 def sort_insensitive(uns_bunch, uns_bunch_original)
-    #uns_bunch_original = uns_bunch
+    #uns_bunch_original = uns_bunch    # sentencia a emplear si no existiese comportamiento anómalo
+#puts uns_bunch_original    # sentencia para verificar comportamiento anómalo
     for n in (0..uns_bunch.length-1)
         uns_bunch[n] = uns_bunch[n].downcase
-        #uns_bunch_to_compare[n] = uns_bunch_to_compare[n].downcase
     end
-
+#puts uns_bunch_original    # sentencia para verificar comportamiento anómalo
     s_bunch = []
     (0..uns_bunch.length-1).each do |p|
         word = "ç"
@@ -18,15 +18,11 @@ def sort_insensitive(uns_bunch, uns_bunch_original)
         end
 
         for i in (0..uns_bunch.length-1)
-            #binding.pry
             if word > uns_bunch[i]
                 word = uns_bunch[i]
                 m = i
-                #binding.pry
             end
         end
-        
-        #binding.pry
         s_bunch[p] = uns_bunch_original[m]
         uns_bunch[m] = "ç"
     end
@@ -50,5 +46,5 @@ in_sentence = gets.chomp
 clean_sentence = clean_punctuation(in_sentence)
 words = clean_sentence.split(" ")
 words2 = clean_sentence.split(" ")
-sort_bunch = sort_insensitive(words, words2)
+sort_bunch = sort_insensitive(words, words)
 puts "#{in_sentence} => #{sort_bunch.join(", ")}"
